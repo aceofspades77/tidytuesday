@@ -1,0 +1,13 @@
+---
+title: "CHOYA_1"
+format: html
+editor: visual
+---
+
+# Part 1.
+
+**Summary of Visualization** This R script utilizes five packages to analyze and visualize data on UFO sightings. It uses ggplot2 to create plots, tidytuesdayR to fetch the dataset, ggtext to customize text, and dplyr and tidyr to manipulate the data. The script starts by loading the UFO sightings data for specific countries. During the data cleaning process, missing values in the day_part column are replaced with "unknown". The data is then summarized in a new data frame called "sightings", which includes the count and percentage of sightings based on the time of day, country, and year. The visualization is generated using ggplot2 and uses geom_point() to create scatter plots. The x-axis represents the years, the y-axis displays the percentage of sightings, the color of the points indicates the time of day, and the size of the points corresponds to the count of sightings. The plot is divided into separate sections for each country using facet_wrap(). This visualization provides insights into how UFO sightings are distributed over time, across different countries, and during different times of the day.
+
+**Link to authors repository:** <https://github.com/celevitz/tidytuesday.git>
+
+![](Rplot.png)
